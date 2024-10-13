@@ -1,11 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { WebView } from 'react-native-webview';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{ flex: 1 }}>
+      <WebView 
+        source={{ uri: 'https://bejewelled-travesseiro-c214c4.netlify.app/' }}  // Replace this with your web app URL
+        style={{ marginTop: 20 }}
+      />
     </View>
   );
 }
