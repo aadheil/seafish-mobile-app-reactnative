@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={{ flex: 1 }}>
       <WebView 
-        source={{ uri: 'https://bejewelled-travesseiro-c214c4.netlify.app/' }}  // Replace this with your web app URL
+        source={{ uri: 'https://seafish.vercel.app/' }}  // Replace this with your web app URL
         style={{ marginTop: 20 }}
       />
     </View>
